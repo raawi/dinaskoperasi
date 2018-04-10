@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2.2
+-- version 3.2.4
 -- http://www.phpmyadmin.net
 --
--- Inang: 127.0.0.1
--- Waktu pembuatan: 07 Mei 2016 pada 16.10
--- Versi Server: 5.5.27
--- Versi PHP: 5.4.7
+-- Host: localhost
+-- Generation Time: Apr 10, 2018 at 10:52 PM
+-- Server version: 5.1.41
+-- PHP Version: 5.3.1
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -17,13 +16,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Basis data: `koperasi`
+-- Database: `koperasi`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `aspek_aktiva`
+-- Table structure for table `aspek_aktiva`
 --
 
 CREATE TABLE IF NOT EXISTS `aspek_aktiva` (
@@ -36,20 +35,20 @@ CREATE TABLE IF NOT EXISTS `aspek_aktiva` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `aspek_aktiva`
+-- Dumping data for table `aspek_aktiva`
 --
 
 INSERT INTO `aspek_aktiva` (`id_penilaian`, `rvppatvp`, `rpbtvp`, `rcrtpb`, `rbmpp`, `tgl_penilaian`) VALUES
-('SKR0000001', 10.00, 4.00, 5.00, 5.00, '0000-00-00'),
-('SKR0000002', 10.00, 4.00, 5.00, 5.00, '0000-00-00'),
-('SKR0000003', 10.00, 4.00, 5.00, 5.00, '0000-00-00'),
-('SKR0000004', 10.00, 4.00, 5.00, 5.00, '0000-00-00'),
-('SKR0000005', 10.00, 4.00, 5.00, 5.00, '0000-00-00');
+('SKR0000001', '10.00', '4.00', '5.00', '5.00', '0000-00-00'),
+('SKR0000002', '10.00', '4.00', '5.00', '5.00', '0000-00-00'),
+('SKR0000003', '10.00', '4.00', '5.00', '5.00', '0000-00-00'),
+('SKR0000004', '10.00', '4.00', '5.00', '5.00', '0000-00-00'),
+('SKR0000005', '10.00', '4.00', '5.00', '5.00', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `aspek_efisiensi`
+-- Table structure for table `aspek_efisiensi`
 --
 
 CREATE TABLE IF NOT EXISTS `aspek_efisiensi` (
@@ -61,20 +60,20 @@ CREATE TABLE IF NOT EXISTS `aspek_efisiensi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `aspek_efisiensi`
+-- Dumping data for table `aspek_efisiensi`
 --
 
 INSERT INTO `aspek_efisiensi` (`id_penilaian`, `rbotpb`, `rattta`, `rep`, `tgl_penilaian`) VALUES
-('SKR0000001', 3.00, 1.00, 1.50, '0000-00-00'),
-('SKR0000002', 3.00, 1.00, 1.50, '0000-00-00'),
-('SKR0000003', 3.00, 1.00, 1.50, '0000-00-00'),
-('SKR0000004', 3.00, 1.00, 1.50, '0000-00-00'),
-('SKR0000005', 3.00, 1.00, 1.50, '0000-00-00');
+('SKR0000001', '3.00', '1.00', '1.50', '0000-00-00'),
+('SKR0000002', '3.00', '1.00', '1.50', '0000-00-00'),
+('SKR0000003', '3.00', '1.00', '1.50', '0000-00-00'),
+('SKR0000004', '3.00', '1.00', '1.50', '0000-00-00'),
+('SKR0000005', '3.00', '1.00', '1.50', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `aspek_jatidiri`
+-- Table structure for table `aspek_jatidiri`
 --
 
 CREATE TABLE IF NOT EXISTS `aspek_jatidiri` (
@@ -85,20 +84,20 @@ CREATE TABLE IF NOT EXISTS `aspek_jatidiri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `aspek_jatidiri`
+-- Dumping data for table `aspek_jatidiri`
 --
 
 INSERT INTO `aspek_jatidiri` (`id_penilaian`, `rpb`, `rpea`, `tgl_penilaian`) VALUES
-('SKR0000001', 7.00, 0.00, '0000-00-00'),
-('SKR0000002', 7.00, 0.00, '0000-00-00'),
-('SKR0000003', 7.00, 0.25, '0000-00-00'),
-('SKR0000004', 7.00, 0.00, '0000-00-00'),
-('SKR0000005', 7.00, 0.00, '0000-00-00');
+('SKR0000001', '7.00', '0.00', '0000-00-00'),
+('SKR0000002', '7.00', '0.00', '0000-00-00'),
+('SKR0000003', '7.00', '0.25', '0000-00-00'),
+('SKR0000004', '7.00', '0.00', '0000-00-00'),
+('SKR0000005', '7.00', '0.00', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `aspek_kemandirian`
+-- Table structure for table `aspek_kemandirian`
 --
 
 CREATE TABLE IF NOT EXISTS `aspek_kemandirian` (
@@ -110,20 +109,20 @@ CREATE TABLE IF NOT EXISTS `aspek_kemandirian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `aspek_kemandirian`
+-- Dumping data for table `aspek_kemandirian`
 --
 
 INSERT INTO `aspek_kemandirian` (`id_penilaian`, `ra`, `rms`, `kop`, `tgl_penilaian`) VALUES
-('SKR0000001', 0.75, 3.00, 4.00, '0000-00-00'),
-('SKR0000002', 0.75, 3.00, 4.00, '0000-00-00'),
-('SKR0000003', 0.75, 3.00, 4.00, '0000-00-00'),
-('SKR0000004', 0.75, 3.00, 4.00, '0000-00-00'),
-('SKR0000005', 0.75, 3.00, 4.00, '0000-00-00');
+('SKR0000001', '0.75', '3.00', '4.00', '0000-00-00'),
+('SKR0000002', '0.75', '3.00', '4.00', '0000-00-00'),
+('SKR0000003', '0.75', '3.00', '4.00', '0000-00-00'),
+('SKR0000004', '0.75', '3.00', '4.00', '0000-00-00'),
+('SKR0000005', '0.75', '3.00', '4.00', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `aspek_likuiditas`
+-- Table structure for table `aspek_likuiditas`
 --
 
 CREATE TABLE IF NOT EXISTS `aspek_likuiditas` (
@@ -133,20 +132,20 @@ CREATE TABLE IF NOT EXISTS `aspek_likuiditas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `aspek_likuiditas`
+-- Dumping data for table `aspek_likuiditas`
 --
 
 INSERT INTO `aspek_likuiditas` (`id_penilaian`, `rk`, `rpptdyd`) VALUES
-('SKR0000001', 2.50, 3.75),
-('SKR0000002', 2.50, 3.75),
-('SKR0000003', 2.50, 3.75),
-('SKR0000004', 2.50, 3.75),
-('SKR0000005', 2.50, 3.75);
+('SKR0000001', '2.50', '3.75'),
+('SKR0000002', '2.50', '3.75'),
+('SKR0000003', '2.50', '3.75'),
+('SKR0000004', '2.50', '3.75'),
+('SKR0000005', '2.50', '3.75');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `aspek_mamajemen`
+-- Table structure for table `aspek_mamajemen`
 --
 
 CREATE TABLE IF NOT EXISTS `aspek_mamajemen` (
@@ -159,20 +158,20 @@ CREATE TABLE IF NOT EXISTS `aspek_mamajemen` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `aspek_mamajemen`
+-- Dumping data for table `aspek_mamajemen`
 --
 
 INSERT INTO `aspek_mamajemen` (`id_penilaian`, `mu`, `mk`, `mp`, `ma`, `ml`) VALUES
-('SKR0000001', 2.50, 2.00, 2.40, 2.10, 1.80),
-('SKR0000002', 2.50, 2.00, 2.40, 2.10, 1.80),
-('SKR0000003', 2.50, 2.00, 2.40, 2.10, 1.80),
-('SKR0000004', 2.50, 2.00, 2.40, 2.10, 1.80),
-('SKR0000005', 2.50, 2.00, 2.40, 2.10, 1.80);
+('SKR0000001', '2.50', '2.00', '2.40', '2.10', '1.80'),
+('SKR0000002', '2.50', '2.00', '2.40', '2.10', '1.80'),
+('SKR0000003', '2.50', '2.00', '2.40', '2.10', '1.80'),
+('SKR0000004', '2.50', '2.00', '2.40', '2.10', '1.80'),
+('SKR0000005', '2.50', '2.00', '2.40', '2.10', '1.80');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `aspek_permodalan`
+-- Table structure for table `aspek_permodalan`
 --
 
 CREATE TABLE IF NOT EXISTS `aspek_permodalan` (
@@ -183,20 +182,20 @@ CREATE TABLE IF NOT EXISTS `aspek_permodalan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `aspek_permodalan`
+-- Dumping data for table `aspek_permodalan`
 --
 
 INSERT INTO `aspek_permodalan` (`id_penilaian`, `rmstta`, `rmstpyb`, `car`) VALUES
-('SKR0000001', 2.00, 6.00, 1.50),
-('SKR0000002', 2.00, 6.00, 1.50),
-('SKR0000003', 2.00, 6.00, 1.50),
-('SKR0000004', 2.00, 6.00, 1.50),
-('SKR0000005', 2.00, 6.00, 1.50);
+('SKR0000001', '2.00', '6.00', '1.50'),
+('SKR0000002', '2.00', '6.00', '1.50'),
+('SKR0000003', '2.00', '6.00', '1.50'),
+('SKR0000004', '2.00', '6.00', '1.50'),
+('SKR0000005', '2.00', '6.00', '1.50');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `bentuk_koperasi`
+-- Table structure for table `bentuk_koperasi`
 --
 
 CREATE TABLE IF NOT EXISTS `bentuk_koperasi` (
@@ -207,7 +206,7 @@ CREATE TABLE IF NOT EXISTS `bentuk_koperasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `bentuk_koperasi`
+-- Dumping data for table `bentuk_koperasi`
 --
 
 INSERT INTO `bentuk_koperasi` (`kd_bk`, `nama_bk`, `kepanjangan`) VALUES
@@ -218,7 +217,7 @@ INSERT INTO `bentuk_koperasi` (`kd_bk`, `nama_bk`, `kepanjangan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `data_koperasi`
+-- Table structure for table `data_koperasi`
 --
 
 CREATE TABLE IF NOT EXISTS `data_koperasi` (
@@ -240,7 +239,7 @@ CREATE TABLE IF NOT EXISTS `data_koperasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `data_koperasi`
+-- Dumping data for table `data_koperasi`
 --
 
 INSERT INTO `data_koperasi` (`kd_koperasi`, `nama_koperasi`, `no_bh`, `tanggal_bh`, `jalan`, `kelurahan`, `kecamatan`, `telp`, `bentuk_koperasi`, `nama_ketua`, `bendahara`, `sekertaris`, `jumlah_anggota`, `status`, `tgl_sekarang`) VALUES
@@ -263,7 +262,7 @@ INSERT INTO `data_koperasi` (`kd_koperasi`, `nama_koperasi`, `no_bh`, `tanggal_b
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kecamatan`
+-- Table structure for table `kecamatan`
 --
 
 CREATE TABLE IF NOT EXISTS `kecamatan` (
@@ -273,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `kecamatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kecamatan`
+-- Dumping data for table `kecamatan`
 --
 
 INSERT INTO `kecamatan` (`kd_kecamatan`, `nama_kecamatan`) VALUES
@@ -297,7 +296,7 @@ INSERT INTO `kecamatan` (`kd_kecamatan`, `nama_kecamatan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kelurahan`
+-- Table structure for table `kelurahan`
 --
 
 CREATE TABLE IF NOT EXISTS `kelurahan` (
@@ -308,7 +307,7 @@ CREATE TABLE IF NOT EXISTS `kelurahan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kelurahan`
+-- Dumping data for table `kelurahan`
 --
 
 INSERT INTO `kelurahan` (`kd_kelurahan`, `nama_kelurahan`, `kd_kec`) VALUES
@@ -491,7 +490,7 @@ INSERT INTO `kelurahan` (`kd_kelurahan`, `nama_kelurahan`, `kd_kec`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kesalahan_fatal`
+-- Table structure for table `kesalahan_fatal`
 --
 
 CREATE TABLE IF NOT EXISTS `kesalahan_fatal` (
@@ -503,7 +502,7 @@ CREATE TABLE IF NOT EXISTS `kesalahan_fatal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kesalahan_fatal`
+-- Dumping data for table `kesalahan_fatal`
 --
 
 INSERT INTO `kesalahan_fatal` (`id_penilaian`, `perselisihan_intern`, `campur_tangan_phk_luar`, `rekayasa_pembukuan`, `tanpa_pembukuan`) VALUES
@@ -516,7 +515,7 @@ INSERT INTO `kesalahan_fatal` (`id_penilaian`, `perselisihan_intern`, `campur_ta
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `koreksi_penilaian`
+-- Table structure for table `koreksi_penilaian`
 --
 
 CREATE TABLE IF NOT EXISTS `koreksi_penilaian` (
@@ -530,7 +529,7 @@ CREATE TABLE IF NOT EXISTS `koreksi_penilaian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `koreksi_penilaian`
+-- Dumping data for table `koreksi_penilaian`
 --
 
 INSERT INTO `koreksi_penilaian` (`id_penilaian`, `planggaran_intern`, `salah_pembukuan`, `pem_pinj_tdk_sesuai`, `tdk_meny_lap_berkala`, `vol_pinj`, `man_usp_blm_diberikan`) VALUES
@@ -543,7 +542,7 @@ INSERT INTO `koreksi_penilaian` (`id_penilaian`, `planggaran_intern`, `salah_pem
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `penilai`
+-- Table structure for table `penilai`
 --
 
 CREATE TABLE IF NOT EXISTS `penilai` (
@@ -558,7 +557,7 @@ CREATE TABLE IF NOT EXISTS `penilai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `penilai`
+-- Dumping data for table `penilai`
 --
 
 INSERT INTO `penilai` (`nip`, `nama_penilai`, `username`, `password`, `photo`, `ukuran`, `type`) VALUES
@@ -568,7 +567,7 @@ INSERT INTO `penilai` (`nip`, `nama_penilai`, `username`, `password`, `photo`, `
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `score`
+-- Table structure for table `score`
 --
 
 CREATE TABLE IF NOT EXISTS `score` (
@@ -583,20 +582,20 @@ CREATE TABLE IF NOT EXISTS `score` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `score`
+-- Dumping data for table `score`
 --
 
 INSERT INTO `score` (`id_penilaian`, `no_penilaian`, `thbuku`, `kd_koperasi`, `score`, `terbilang`, `tanggal_penilaian`) VALUES
-('SKR0000001', '001', '2013', 'KOP00004', 70.30, 'Tujuh Puluh Koma Tiga Puluh', '2014-09-24'),
-('SKR0000002', '003', '2013', 'KOP00011', 70.30, 'Tujuh Puluh Koma Tiga Puluh', '2014-09-24'),
-('SKR0000003', '003', '2013', 'KOP00009', 70.55, 'Tujuh Puluh Koma Lima Puluh Lima', '2014-09-24'),
-('SKR0000004', '001', '2013', 'KOP00005', 70.30, 'Tujuh Puluh Koma Tiga Puluh', '2014-12-06'),
-('SKR0000005', '001', '2013', 'KOP00011', 70.30, 'Tujuh Puluh Koma Tiga Puluh', '2014-12-06');
+('SKR0000001', '001', '2013', 'KOP00004', '70.30', 'Tujuh Puluh Koma Tiga Puluh', '2014-09-24'),
+('SKR0000002', '003', '2013', 'KOP00011', '70.30', 'Tujuh Puluh Koma Tiga Puluh', '2014-09-24'),
+('SKR0000003', '003', '2013', 'KOP00009', '70.55', 'Tujuh Puluh Koma Lima Puluh Lima', '2014-09-24'),
+('SKR0000004', '001', '2013', 'KOP00005', '70.30', 'Tujuh Puluh Koma Tiga Puluh', '2014-12-06'),
+('SKR0000005', '001', '2013', 'KOP00011', '70.30', 'Tujuh Puluh Koma Tiga Puluh', '2014-12-06');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `skor`
+-- Table structure for table `skor`
 --
 
 CREATE TABLE IF NOT EXISTS `skor` (
@@ -615,17 +614,19 @@ CREATE TABLE IF NOT EXISTS `skor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `skor`
+-- Dumping data for table `skor`
 --
 
 INSERT INTO `skor` (`kd_penilaian`, `no_penilaian`, `kd_koperasi`, `bentuk_koperasi`, `kecamatan`, `th_buku`, `tgl_sekarang`, `skor`, `terbilang`, `predikat`, `kd_penilai`) VALUES
-('SKR0001', '001', 'KOP00005', 'KSP', 'NGALIYAN', 2013, '2014-12-23', 70.50, 'Tujuh Puluh Koma Lima Puluh', 'CUKUP SEHAT', 'a5317'),
-('SKR0002', '002', 'KOP00004', 'KSP', 'BANYUMANIK', 2013, '2014-12-23', 75.80, 'Tujuh Puluh Lima Koma Delapan Puluh', 'CUKUP SEHAT', 'a5317'),
-('SKR0003', '003', 'KOP00005', 'KSP', 'NGALIYAN', 2013, '2014-12-23', 50.25, 'Lima Puluh Koma Dua Puluh Lima', 'KURANG SEHAT', 'a5317'),
-('SKR0004', '004', 'KOP00006', 'KSP', 'SEMARANG BARAT', 2013, '2014-12-23', 90.00, 'Sembilan Puluh Koma Nol Nol', 'SEHAT', 'a5317'),
-('SKR0005', '005', 'KOP00018', 'KSP', 'NGALIYAN', 2013, '2014-12-23', 60.35, 'Enam Puluh Koma Tiga Puluh Lima', 'CUKUP SEHAT', 'a5317'),
-('SKR0006', '006', 'KOP00016', 'KSP', 'MIJEN', 2013, '2014-12-23', 80.50, 'Delapan Puluh Koma Lima Puluh', 'SEHAT', 'a5317'),
-('SKR0007', '007', 'KOP00013', 'KSP', 'MIJEN', 2014, '2015-01-02', 80.00, 'Delapan Puluh Koma Nol Nol', 'CUKUP SEHAT', 'a5317');
+('SKR0001', '001', 'KOP00005', 'KSP', 'NGALIYAN', 2013, '2014-12-23', '80.10', 'Delapan Puluh Koma Sepuluh', 'SEHAT', 'a5317'),
+('SKR0002', '002', 'KOP00004', 'KSP', 'BANYUMANIK', 2013, '2014-12-23', '75.80', 'Tujuh Puluh Lima Koma Delapan Puluh', 'CUKUP SEHAT', 'a5317'),
+('SKR0003', '003', 'KOP00005', 'KSP', 'NGALIYAN', 2013, '2014-12-23', '50.25', 'Lima Puluh Koma Dua Puluh Lima', 'KURANG SEHAT', 'a5317'),
+('SKR0004', '004', 'KOP00006', 'KSP', 'SEMARANG BARAT', 2013, '2014-12-23', '90.00', 'Sembilan Puluh Koma Nol Nol', 'SEHAT', 'a5317'),
+('SKR0005', '005', 'KOP00018', 'KSP', 'NGALIYAN', 2013, '2014-12-23', '60.35', 'Enam Puluh Koma Tiga Puluh Lima', 'CUKUP SEHAT', 'a5317'),
+('SKR0006', '006', 'KOP00016', 'KSP', 'MIJEN', 2013, '2014-12-23', '80.50', 'Delapan Puluh Koma Lima Puluh', 'SEHAT', 'a5317'),
+('SKR0007', '007', 'KOP00013', 'KSP', 'MIJEN', 2014, '2015-01-02', '80.00', 'Delapan Puluh Koma Nol Nol', 'CUKUP SEHAT', 'a5317'),
+('SKR0008', '008', 'KOP00004', 'KSP', 'BANYUMANIK', 2017, '2018-04-10', '999.99', 'Seribu', 'SEHAT', 'a5317'),
+('SKR0009', '009', 'KOP00004', 'KSP', 'BANYUMANIK', 2017, '2018-04-10', '100.00', 'Seratus', 'SEHAT', 'a5317');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
