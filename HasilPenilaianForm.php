@@ -162,7 +162,7 @@ $(document).ready(function(){
 		
 		<tr>
 			<td><span class="padding_form">Skor</span></td>
-			<td><input class="input_text" type="text" name="skor" id="skor" value="<?php echo $dskor; ?>" size="15"> </td>
+			<td><input class="input_text" type="number" max="100" min="10" name="skor" id="skor" value="<?php echo $dskor; ?>" size="15"> </td>
 		</tr>
 		
 		<tr>
