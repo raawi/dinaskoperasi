@@ -1,0 +1,535 @@
+<html>
+<head>
+<style type="text/css">
+	body{margin:0px; font-family:arial; color:#2b3332;}
+	.clear{clear:both; font-size:11px;}
+	.clear_left{clear:left;}
+	.header{margin:auto; 
+			height:50px;  
+			background-color:#212121; 
+			border-bottom:0px solid #312f30;}
+			
+	.wrap{margin:auto; border:0px solid black;}
+	.left{
+			width:225px;
+			height:808px;
+			margin:0px;
+			padding:0px;
+			background-color:#f9fafc;
+			border: 0px solid rgb(178, 178, 178);
+			border-top: none;
+			border-bottom: none;
+			float:left;
+			
+			-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	}
+	.info_admin{
+		margin:12px;;
+		border:1px solid rgb(178, 178, 178);
+		border-bottom:1px solid rgb(178, 178, 178);
+		border-radius:2px;
+		font-family:Trebuchet MS;
+	}
+	.teks_info_admin{padding:10px;
+			border: 0px solid rgb(178, 178, 178);
+			border-bottom: 0px solid rgb(178, 178, 178);
+			border-top: 1px solid rgb(178, 178, 178);
+			
+			background-image: linear-gradient(to bottom,#fff,#e5e5e5);
+			background-image: -o-linear-gradient(to bottom,#fff,#e5e5e5);
+			background-image: -ms-linear-gradient(to bottom,#fff,#e5e5e5);
+			background-image: -moz-linear-gradient(to bottom,#fff,#e5e5e5);
+			background-image: -webkit-linear-gradient(to bottom,#fff,#e5e5e5);
+			
+			text-align:center;
+			color:#1b5980;
+			font-size:13px;}
+	.judul_info_admin{padding:18px;
+			border: 0px solid rgb(178, 178, 178);
+			border-bottom: 1px solid rgb(178, 178, 178);
+			border-top: 0px solid rgb(178, 178, 178);
+			
+			background-image: linear-gradient(to bottom,#ff4f51,#d04243);
+			background-image: -o-linear-gradient(to bottom,#ff4f51,#d04243);
+			background-image: -ms-linear-gradient(to bottom,#ff4f51,#d04243);
+			background-image: -moz-linear-gradient(to bottom,#ff4f51,#d04243);
+			background-image: -webkit-linear-gradient(to bottom,#ff4f51,#d04243);
+			
+			
+			color:white;
+			text-align:center;
+			font-size:12px;}
+
+	.judul_info_koperasi{padding:18px;
+			border: 0px solid rgb(178, 178, 178);
+			border-bottom: 1px solid rgb(178, 178, 178);
+			border-top: 0px solid rgb(178, 178, 178);
+			
+			background-image: linear-gradient(to bottom,#5b9bb4,#46788c);
+			background-image: -o-linear-gradient(to bottom,#5b9bb4,#46788c);
+			background-image: -ms-linear-gradient(to bottom,#5b9bb4,#46788c);
+			background-image: -moz-linear-gradient(to bottom,#5b9bb4,#46788c);
+			background-image: -webkit-linear-gradient(to bottom,#5b9bb4,#46788c);
+			
+			
+			color:white;
+			text-align:center;
+			font-size:12px;}
+			
+	.foto_admin{margin-auto;
+				height:250px;
+				background-color:white;
+				border-bottom:0px solid rgb(178, 178, 178);
+				font-size:13px;
+				text-align:center}
+	
+	.content{
+			margin-left:225px;
+			margin-right:0px;
+			padding:0px;
+			border: 1px solid rgb(178, 178, 178);
+			border-top: none;
+			border-bottom: none;}
+	
+	.nav{ width:100%; 
+			background-color: #000;
+			opacity:0.9;
+			border-bottom:4px solid #ff713f;}
+	#menu {	background-color: #000;
+			opacity:0.9;
+	width:960px;
+	margin:auto;
+	
+	}
+	#menu ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#menu ul li {
+	padding:0px;
+}
+#menu span{margin-left:10px;}
+#menu a{
+	crusor:pointer;
+	float:left;
+	color:#fff;
+	font-family:arial;
+	font-size:14px;
+	text-decoration:none;
+	padding:18px 20px; 
+	border:0px solid white;
+}
+
+#menu li a:hover {
+	background-color:#ff713f;
+}
+#menu li ul{display:none; background-color:black; padding:0px;}
+#menu li ul li a{width:150px; display:block;}
+#menu li:hover ul{display:block; position:absolute; margin-left:103px; margin-top:53px; border-top:4px solid #ff713f;}
+
+#menu li ul.laporan{display:none; background-color:black; padding:0px;}
+#menu li ul.laporan li a{width:200px; display:block;}
+#menu li:hover ul.laporan{display:block; position:absolute; margin-left:183px; margin-top:53px; border-top:4px solid #ff713f;}
+
+#menu li ul.pencarian_cepat{display:none; background-color:black; padding:0px;}
+#menu li ul.pencarian_cepat li a{width:200px; display:block;}
+#menu li:hover ul.pencarian_cepat{display:block; position:absolute; margin-left:287px; margin-top:53px; border-top:4px solid #ff713f;}
+
+.logout{padding:16px; float:right; border:0px solid white;}
+.logout span{margin-left:10px;}
+.logout a{font-size:14px;background:url('images/switch.png'); background-repeat:no-repeat; background-position:7px 4px; padding:4px 0px 4px 15px;text-decoration:none;color:white;}
+.judul_halaman{
+			margin:auto;
+			border: 0px solid rgb(178, 178, 178);
+			border-bottom: 1px solid rgb(178, 178, 178);
+			border-top: 0px solid rgb(178, 178, 178);
+			
+			background-image: linear-gradient(to bottom,#fff,#e5e5e5);
+			background-image: -o-linear-gradient(to bottom,#fff,#e5e5e5);
+			background-image: -ms-linear-gradient(to bottom,#fff,#e5e5e5);
+			background-image: -moz-linear-gradient(to bottom,#fff,#e5e5e5);
+			background-image: -webkit-linear-gradient(to bottom,#fff,#e5e5e5);
+			-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+			
+			padding:12px;
+			font-size:14px;
+			color:#1b5980; font-weight:400;
+}
+
+.tbl_kec{padding:5px;
+		margin:0px;;
+		margin-bottom:0px;
+		font-size:13px;
+		line-height:40px;
+		width:100%;
+		border-bottom: 1px solid rgb(178, 178, 178);
+		background-color:#f9f9f9;
+		}
+		
+input[type="text"]{padding:8px 5px;
+					margin:0;
+					border: 1px solid rgb(178, 178, 178);
+					border-radius:0px;}
+input[type="text"]:focus{border: 1px solid  #2989ff;}
+select{padding:4px 5px 2px 5px;
+					margin:0;
+					border: 1px solid rgb(178, 178, 178);
+					border-radius:5px;}
+
+option{padding:4px 5px 2px 5px;}
+.submit_button{
+			cursor: pointer;
+			margin:3px;
+			padding:5px;
+			background: #ff3032;
+			background-image: linear-gradient(to bottom,#5b9bb4,#46788c);
+			background-image: -o-linear-gradient(to bottom,#5b9bb4,#46788c);
+			background-image: -ms-linear-gradient(to bottom,#5b9bb4,#46788c);
+			background-image: -moz-linear-gradient(to bottom,#5b9bb4,#46788c);
+			background-image: -webkit-linear-gradient(to bottom,#5b9bb4,#46788c);
+			color: #fff;	
+			border: 1px solid #195195;	
+			border-radius: 6px;
+	
+			-webkit-transition: all 0.2s linear;
+			-moz-transition: all 0.2s linear;
+			-o-transition: all 0.2s linear;
+			transition: all 0.2s linear;}
+.submit_button:hover{
+			background-image: linear-gradient(to bottom,#ff4f51,#d04243);
+			background-image: -o-linear-gradient(to bottom,#ff4f51,#d04243);
+			background-image: -ms-linear-gradient(to bottom,#ff4f51,#d04243);
+			background-image: -moz-linear-gradient(to bottom,#ff4f51,#d04243);
+			background-image: -webkit-linear-gradient(to bottom,#ff4f51,#d04243);
+			border:1px solid #e06867;
+}
+.data_kec{
+font-size:13px;
+border-top:0px solid black;
+border-left:0px solid black;
+border-bottom:0px solid black;
+background-color:#f9f9f9;
+
+}
+.data_kec th{background-image: linear-gradient(to bottom,#d7d8d8,#d1d1d1);
+			background-image: -o-linear-gradient(to bottom,#d7d8d8,#d1d1d1);
+			background-image: -ms-linear-gradient(to bottom,#d7d8d8,#d1d1d1);
+			background-image: -moz-linear-gradient(to bottom,#d7d8d8,#d1d1d1);
+			background-image: -webkit-linear-gradient(to bottom,#d7d8d8,#d1d1d1);
+			
+				text-align:left;
+				font-weight:bold;
+				font-size:12px;
+				color:#1b5980;
+				padding:12px;
+				border-top:0px solid black;
+				border-right:px solid black;
+				border-bottom:1px solid #e6e6e6;}
+.data_kec td{font-weight:normal;
+				padding:7px;
+				border-left:0px solid black;
+				border-right:0px solid #e6e6e6;
+				border-top:0px solid black;
+				border-bottom:1px solid #e6e6e6;
+				color:#5f5f5f;
+				}
+.data_kec td.aksi{text-align:left;
+				}
+
+.data_kec td a{font-weight:normal;
+				text-decoration:none;
+				color:red;
+				padding:7px;}
+.data_kec td a{
+				color:#6e6e6e;
+				}
+.data_kec tr:hover td{background-color:#e6e6e6; color:1b5980;} 
+span#search input{margin-left:550px; margin-top:-35px; border:1px solid #444444; width:200px; border-radius:20px;}
+
+li.home a{background:url('images/home.png'); background-repeat:no-repeat; background-position:10px 17px; padding:4px 0px 4px 15px; }
+li.data a{background:url('images/stack.png'); background-repeat:no-repeat; background-position:10px 17px; padding:4px 0px 4px 15px; }
+li.laporan a{background:url('images/file.png'); background-repeat:no-repeat; background-position:10px 17px; padding:4px 0px 4px 15px; }
+li.search a{background:url('images/search.png'); background-repeat:no-repeat; background-position:10px 17px; padding:4px 0px 4px 15px; }
+
+button{padding:3px;
+display:inline-block;*display:inline;*zoom:1;padding:4px 12px;margin-bottom:0;font-size:14px;line-height:20px;*line-height:20px;text-align:center;vertical-align:middle;cursor:pointer;color:#333333;
+text-shadow:0 1px 1px rgba(255, 255, 255, 0.75);
+background-color:#f5f5f5;background-image:-moz-linear-gradient(top, #ffffff, #e6e6e6);
+background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+background-image:-webkit-linear-gradient(top, #ffffff, #e6e6e6);
+background-image:-o-linear-gradient(top, #ffffff, #e6e6e6);
+background-image:linear-gradient(to bottom, #ffffff, #e6e6e6);
+background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);border-color:#e6e6e6 #e6e6e6 #bfbfbf;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#e6e6e6;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);border:1px solid #cccccc;*border:0;border-bottom-color:#b3b3b3;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;*margin-left:.3em;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);}
+			
+.catatan_pencarian{color:green; font-family:verdana; font-style:italic;}			
+			
+</style>
+<script src="jquery-1.9.1.min.js"></script>
+<script type='text/javascript'>
+//<![CDATA[
+$(document).ready(function() {
+    // Menentukan elemen yang dijadikan sticky yaitu .nav
+    var stickyNavTop = $('.nav').offset().top; 
+    var stickyNav = function(){
+        var scrollTop = $(window).scrollTop();  
+        // Kondisi jika discroll maka menu akan selalu diatas, dan sebaliknya        
+        if (scrollTop > stickyNavTop) { 
+            $('.nav').css({ 'position': 'fixed', 'top':0, 'z-index':9999 });
+        } else {
+            $('.nav').css({ 'position': 'relative' });
+        }
+    };
+    // Jalankan fungsi
+    stickyNav();
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
+$(function() { $(window).scroll(function() { if($(this).scrollTop()>60) { $('#ScrollToTop').fadeIn()} else { $('#ScrollToTop').fadeOut();}});
+$('#ScrollToTop').click(function(){$('html,body').animate({scrollTop:0},200);return false})});
+
+//]]>
+</script>
+
+<script type='text/javascript'>
+</script>
+
+</head>
+<body onload="stickyNav();">
+<div class="header">
+</div>
+<div class="nav">
+<div id="menu">
+      <ul>
+        <li class="home"><a href="#"><span>Beranda</span></a></li>
+        <li class="data"><a href="#"><span>Data</span></a>
+			<ul>
+				<li><a href=""><span>Data Jabatan</span></a></li>
+				<li><a href=""><span>Data Kecamatan</span></a></li>
+				<li><a href=""><span>Data Kelurahan</span></a></li>
+				<li><a href=""><span>Data Koperasi</span></a></li>
+			</ul>
+		</li>
+        <li class="laporan"><a href="#"><span>Laporan</span></a>
+			<ul class="laporan">
+				<li><a href=""><span>Laporan Data Koperasi</span></a></li>
+			</ul>
+		</li>
+        <li class="search"><a href="#"><span>Pencarian Data</span></a>
+		<ul class="pencarian_cepat">
+				
+				<li><a href=""><span>Cari Data Koperasi</span></a></li>
+			</ul></li>
+      </ul>
+	  
+ </div>
+ <div class="logout"><a href=""><span>Logout</span></a></div>
+ <div class="clear"></div>
+</div>
+<div class="wrap">
+
+<div class="left">
+<div class="info_admin">
+	<div class="judul_info_admin">INFO ADMIN</div>
+	<div class="foto_admin">
+		<img src="images/IMG_713s3.jpg" height="250px" width="200px;">
+	</div>
+	<div class="teks_info_admin">NAMA : Rojo Kumentol</div>
+	<div class="teks_info_admin">NIP. 01009 9905 3331</div>
+</div>
+
+<div class="info_admin">
+	<div class="judul_info_koperasi">INFO KOPERASI</div>
+	<div class="teks_info_admin">Jumlah Koperasi : 3387</div>
+	<div class="teks_info_admin">Koperasi Aktif :3300</div>
+	<div class="teks_info_admin">Koperasi Non Aktif :87</div>
+</div>
+</div>
+
+<div class="content">
+<div class="judul_halaman"> Cari Koperasi</div>
+
+	<table class="tbl_kec" cellpadding="0" cellspacing="0">
+		<tr class="">
+			<td width="150px;">Nama Koperasi</td>
+			<td width="2px">:</td>
+			<td width="300"><input type="text" name="TNKoperasi" size="50" placeholder="masukkan karakter" /></td>
+			<td><button style="width:">Cari Data</button></td>
+			<td class="catatan_pencarian">*autocomplete (masukkan minimal 3 karakter pada textfiled),</td>
+		</tr>
+		
+	</table>
+
+<table class="tbl_kec" cellpadding="0" cellspacing="0">
+		<tr>
+			<td width="80px;">id</td>
+			<td width="2px">:</td>
+			<td width="300"><input type="text" name="TNKoperasi" size="10" readonly></td>
+		</tr>
+		<tr>
+			<td width="80px;">Nama Usaha</td>
+			<td width="2px">:</td>
+			<td width="300"><input type="text" name="TNKoperasi" size="50" ></td>
+		</tr>
+		<tr>
+			<td width="80px;">Jenis Usaha</td>
+			<td width="2px">:</td>
+			<td width="300"><select>
+				<option>KSP</option>
+				<option>UKM</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td width="80px;">No. BH</td>
+			<td width="2px">:</td>
+			<td width="300"><input type="text" name="TNKoperasi" size="40"></td>
+		</tr>
+		<tr>
+			<td width="80px;">Nama pengurus</td>
+			<td width="2px">:</td>
+			<td width="300"><input type="text" name="TNKoperasi" size="50"></td>
+		</tr>
+		<tr>
+			<td width="80px;">Jumlah Anggota</td>
+			<td width="2px">:</td>
+			<td width="300"><input type="text" name="TNKoperasi" size="3"></td>
+		</tr>
+		<tr>
+			<td width="80px;">Tanggal Pendirian</td>
+			<td width="2px">:</td>
+			<td width="300"><input type="text" name="TNKoperasi" size="25"></td>
+		</tr>
+		<tr>
+			<td width="80px;">Alamat</td>
+			<td width="2px">:</td>
+			<td width="300"><textarea cols="40" rows="6" noresize></textarea></td>
+		</tr>
+		<tr>
+			<td width="80px;"></td>
+			<td width="2px">:</td>
+			<td width="300"><button>Ubah</button> <button>Hapus</button></td>
+		</tr>
+	</table>
+<div class="judul_halaman">Data Kecamatan </div>
+<!--Tabel data KECAMATAN-->
+
+<table width="100%" border="0" cellspacing="0" class="data_kec">
+	<tr>
+		<th width="125px">KD KECAMATAN</th>
+		<th>NAMA KECAMATAN</th>
+		<th width="100px">AKSI</th>
+		
+	</tr>
+	
+	<tr>
+		<td>1</td>
+		<td>BANYUMKANIK</td>
+		<td class="aksi"><a href=""><img src="images/file.png" title="Lihat Data"></a><a href=""><img src="images/pencil.png" title="Edit"></a>
+		<a href=""><img src="images/close.png" title="Hapus"></a></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>CANDISARI</td>
+		<td class="aksi"><a href=""><img src="images/file.png" title="Lihat Data"></a><a href=""><img src="images/pencil.png" title="Edit"></a>
+		<a href=""><img src="images/close.png" title="Hapus"></a></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>GAJAH MUNGKUR</td>
+		<td class="aksi"><a href=""><img src="images/file.png" title="Lihat Data"></a><a href=""><img src="images/pencil.png" title="Edit"></a>
+		<a href=""><img src="images/close.png" title="Hapus"></a></td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+</div>
+<div class="clear"></div>
+</div>
+
+<style type='text/css' scoped='scoped'>
+#ScrollToTop{text-align:center; position:fixed; bottom:0px; right:3px; cursor:pointer;display:none}
+</style>
+<div id='ScrollToTop'><img alt='Back to top' src='http://2.bp.blogspot.com/-MFhU3vLp5ho/UiaBZeA1McI/AAAAAAAAAQs/MrzW2ljP5mA/s1600/arrow-up_basic_blue.png'/></div>
+
+
+
+</body>
+</html>
